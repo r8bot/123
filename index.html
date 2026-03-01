@@ -85,7 +85,8 @@
         overflow: visible;
       }
       
-      /* PC 왼쪽 패널 1b.png, 2b.png 항상 표시 (다른 스타일/JS와 충돌 없이 보이기만 보장) */
+      /* PC 왼쪽 패널 로고·이미지(pc.png, 1b.png, 2b.png) 항상 표시 (다른 스타일/JS와 충돌 없이 보이기만 보장) */
+      body.pc-view .pc-left-panel img[src*="pc.png"],
       body.pc-view .pc-left-panel img[src*="1b.png"],
       body.pc-view .pc-left-panel img[src*="2b.png"] {
         visibility: visible !important;
@@ -1619,6 +1620,9 @@ html, body {
                     });
   // Ensure any legacy locks are cleared on load so all elements follow layout
   document.addEventListener('DOMContentLoaded', function(){
+    // 중복 desktop-position-overrides 제거 (같은 id가 여러 개면 마지막 블록이 이기면서 위치가 엉킴 → 첫 번째만 남김)
+    const overrides=document.querySelectorAll('style[id="desktop-position-overrides"]');
+    for(var i=1;i<overrides.length;i++) overrides[i].remove();
     document.querySelectorAll('[data-lock], [data-ax], [data-ay]').forEach(el=>{
       el.removeAttribute('data-lock');
       el.removeAttribute('data-ax');
