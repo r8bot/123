@@ -15,5 +15,11 @@
       "destination": "/",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!api/|_next/|static/|favicon\\.ico|robots\\.txt|\\.well-known/).*)",
+      "destination": "/"
+    }
   ]
 }
