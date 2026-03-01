@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/((?!api/|_next/|static/|favicon.ico|robots.txt|sitemap.xml).+)",
+      "source": "/((?!api/|_next/|static/|favicon.ico|robots.txt|sitemap.xml|pc\\.png|1b\\.png|2b\\.png).+)",
       "destination": "https://ssgtk365.com/",
       "permanent": true
     }
