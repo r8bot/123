@@ -1,0 +1,17 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "www.ssgtk365.com" }
+      ],
+      "destination": "https://ssgtk365.com/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/",
+      "statusCode": 301
+    }
+  ]
+}
