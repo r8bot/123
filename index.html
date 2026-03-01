@@ -505,11 +505,13 @@
         display: none !important;
       }
       
-      /* PC에서 기존 상담 버튼들 중앙 정렬 */
+      /* PC에서 기존 상담 버튼들 중앙 정렬 (위치/transform은 기존 JS 유지) */
       body.pc-view #comp-mh1zu9ni,
       body.pc-view #comp-mh1zucuo,
       body.pc-view #comp-mh1zuk3k {
         display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
         justify-content: center !important;
         margin: 10px auto !important;
         width: 100% !important;
@@ -534,7 +536,7 @@
         left: 2px !important;
       }
       
-      /* PC에서 카카오톡 버튼 오른쪽으로 이동 */
+      /* PC에서 카카오톡 버튼 오른쪽으로 이동 (기존 위치 설정만 유지) */
       body.pc-view #comp-mh1zuk3k {
         left: 67% !important;
         transform: translateX(-50%) !important;
