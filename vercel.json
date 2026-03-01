@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/apple-app-site-association",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/",
+      "permanent": false
+    }
+  ]
+}
