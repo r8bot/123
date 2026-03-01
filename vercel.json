@@ -1,25 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/favicon.ico",
-      "destination": "/",
+      "source": "/((?!api/|_next/|static/|favicon.ico|robots.txt|sitemap.xml).+)",
+      "destination": "https://ssgtk365.com/",
       "permanent": true
-    },
-    {
-      "source": "/.well-known/apple-app-site-association",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/apple-app-site-association",
-      "destination": "/",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/((?!api/|_next/|static/|favicon\\.ico|robots\\.txt|\\.well-known/).*)",
-      "destination": "/"
     }
   ]
 }
