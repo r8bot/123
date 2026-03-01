@@ -14,11 +14,6 @@
       "source": "/apple-app-site-association",
       "destination": "/",
       "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/",
-      "permanent": false
     }
   ]
 }
