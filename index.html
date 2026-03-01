@@ -85,13 +85,17 @@
         overflow: visible;
       }
       
-      /* PC 왼쪽 패널 로고·이미지(pc.png, 1b.png, 2b.png) 항상 표시 (다른 스타일/JS와 충돌 없이 보이기만 보장) */
+      /* PC 왼쪽 패널 로고·이미지(pc.png, 1b.png, 2b.png) - 항상 표시 + 위치 고정 (중복 desktop-position-overrides 무시) */
       body.pc-view .pc-left-panel img[src*="pc.png"],
       body.pc-view .pc-left-panel img[src*="1b.png"],
       body.pc-view .pc-left-panel img[src*="2b.png"] {
         visibility: visible !important;
         opacity: 1 !important;
         display: inline-block !important;
+        transform: none !important;
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
       }
       body.pc-view .pc-container,
       body.pc-view .pc-left-panel {
