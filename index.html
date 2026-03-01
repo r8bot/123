@@ -85,6 +85,18 @@
         overflow: visible;
       }
       
+      /* PC 왼쪽 패널 1b.png, 2b.png 항상 표시 (다른 스타일/JS와 충돌 없이 보이기만 보장) */
+      body.pc-view .pc-left-panel img[src*="1b.png"],
+      body.pc-view .pc-left-panel img[src*="2b.png"] {
+        visibility: visible !important;
+        opacity: 1 !important;
+        display: inline-block !important;
+      }
+      body.pc-view .pc-container,
+      body.pc-view .pc-left-panel {
+        overflow: visible !important;
+      }
+      
       
       
       .pc-title {
